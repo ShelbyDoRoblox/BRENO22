@@ -3,27 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Cartões de Perguntas</title>
+    <title>Página com Imagem de Fundo</title>
+    <style>
+        /* Estilo para o corpo da página */
+        body {
+            margin: 0; /* Remove margens padrão */
+            height: 100vh; /* Altura total da tela */
+            background-image: url('https://images4.alphacoders.com/136/thumb-1920-1364151.png'); /* URL da imagem de fundo */
+            background-size: cover; /* Cobre toda a área */
+            background-position: left; /* Posiciona a imagem à esquerda */
+            background-repeat: no-repeat; /* Não repete a imagem */
+        }
+
+        /* Adicionando estilo para o conteúdo, se necessário */
+        .conteudo {
+            display: flex;
+            justify-content: center; /* Centraliza conteúdo horizontalmente */
+            align-items: center; /* Centraliza conteúdo verticalmente */
+            height: 100%; /* Altura total do corpo */
+            color: white; /* Cor do texto */
+            text-align: center; /* Alinhamento do texto */
+            text-shadow: 1px 1px 2px black; /* Sombreamento do texto para melhorar a legibilidade */
+        }
+    </style>
 </head>
 <body>
-    <div class="container"></div>
-    <script src="perguntas.js"></script>
-    <script src="app.js"></script>
-</body>
-</html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu Título Aqui</title>
-    <link rel="stylesheet" href="style.css"> <!-- Caminho para o CSS -->
-</head>
-<body>
-    <div id="container"></div> <!-- Onde os cartões vão ser adicionados -->
-    
-    <script src="perguntas.js"></script> <!-- Caminho para o arquivo de perguntas -->
-    <script src="app.js"></script> <!-- Caminho para o arquivo de lógica -->
+    <div class="conteudo">
+        <h1>O que aconteceria se você caísse em um buraco negro?</h1>
+        <p>No horizonte de eventos, sua percepção do espaço e do tempo mudaria completamente.</p>
+    </div>
 </body>
 </html>
 <!DOCTYPE html>
@@ -37,7 +45,7 @@
         body {
             margin: 0; /* Remove margens padrão */
             height: 100vh; /* Altura total da tela */
-            background-image: url('https://i.pinimg.com/736x/df/3a/79/df3a79f76304d4daac32e837b7bbbbc5.jpg'); /* URL da imagem de fundo */
+            background-image: url('https://images4.alphacoders.com/136/thumb-1920-1364151.png'); /* URL da imagem de fundo */
             background-size: cover; /* Cobre toda a área */
             background-position: left; /* Posiciona a imagem à esquerda */
             background-repeat: no-repeat; /* Não repete a imagem */
