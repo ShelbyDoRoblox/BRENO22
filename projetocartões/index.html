@@ -15,7 +15,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column; /* Permite empilhar os cartões verticalmente */
+            flex-direction: column; /* Alinhamento vertical dos cartões */
+        }
+
+        .container {
+            display: flex; /* Usando flexbox para alinhar os cartões horizontalmente */
+            flex-wrap: wrap; /* Permite que os cartões se movam para a próxima linha se necessário */
+            justify-content: center; /* Centraliza os cartões horizontalmente */
+            gap: 20px; /* Espaçamento entre os cartões */
         }
 
         .cartao {
@@ -23,7 +30,6 @@
             border: 4px solid #00F4BF;
             border-radius: 8px;
             width: 300px;
-            margin: 10px;
             padding: 20px;
             box-sizing: border-box;
             text-align: center;
@@ -54,25 +60,27 @@
     </style>
 </head>
 <body>
-    <div class="cartao">
-        <div class="pergunta">O que aconteceria se você caísse em um buraco negro?</div>
-        <div class="resposta">No horizonte de eventos, sua percepção do espaço e do tempo mudaria completamente.</div>
-    </div>
-    <div class="cartao">
-        <div class="pergunta">Qual é a capital da França?</div>
-        <div class="resposta">Paris.</div>
-    </div>
-    <div class="cartao">
-        <div class="pergunta">O que é o aquecimento global?</div>
-        <div class="resposta">É o aumento da temperatura média da Terra devido ao efeito estufa.</div>
-    </div>
-    <div class="cartao">
-        <div class="pergunta">Quais são os  melhores jogadores de futebol</div>
-        <div class="resposta">Goleiro bruno, Robinho, Daniel alves e Neymar.</div>
-    </div>
-    <div class="cartao">
-        <div class="pergunta">Qual é a fórmula da água?</div>
-        <div class="resposta">H2O.</div>
+    <div class="container">
+        <div class="cartao">
+            <div class="pergunta">O que aconteceria se você caísse em um buraco negro?</div>
+            <div class="resposta">No horizonte de eventos, sua percepção do espaço e do tempo mudaria completamente.</div>
+        </div>
+        <div class="cartao">
+            <div class="pergunta">Qual é a capital da França?</div>
+            <div class="resposta">Paris.</div>
+        </div>
+        <div class="cartao">
+            <div class="pergunta">O que é o aquecimento global?</div>
+            <div class="resposta">É o aumento da temperatura média da Terra devido ao efeito estufa.</div>
+        </div>
+        <div class="cartao">
+            <div class="pergunta">Quem escreveu "Dom Casmurro"?</div>
+            <div class="resposta">Machado de Assis.</div>
+        </div>
+        <div class="cartao">
+            <div class="pergunta">Qual é a fórmula da água?</div>
+            <div class="resposta">H2O.</div>
+        </div>
     </div>
     <!-- Adicione mais cartões conforme necessário -->
 </body>
