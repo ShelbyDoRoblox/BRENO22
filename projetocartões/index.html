@@ -3,70 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página com Imagem de Fundo</title>
+    <title>Página com Cartões de Perguntas</title>
     <style>
-        /* Estilo para o corpo da página */
         body {
-            margin: 0; /* Remove margens padrão */
-            height: 100vh; /* Altura total da tela */
-            background-image: url('https://images4.alphacoders.com/136/thumb-1920-1364151.png'); /* URL da imagem de fundo */
-            background-size: cover; /* Cobre toda a área */
-            background-position: left; /* Posiciona a imagem à esquerda */
-            background-repeat: no-repeat; /* Não repete a imagem */
+            margin: 0;
+            height: 100vh;
+            background-image: url('https://images4.alphacoders.com/136/thumb-1920-1364151.png');
+            background-size: cover;
+            background-position: left;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Permite empilhar os cartões verticalmente */
         }
 
-        /* Adicionando estilo para o conteúdo, se necessário */
-        .conteudo {
-            display: flex;
-            justify-content: center; /* Centraliza conteúdo horizontalmente */
-            align-items: center; /* Centraliza conteúdo verticalmente */
-            height: 100%; /* Altura total do corpo */
+        .cartao {
+            background-color: rgba(0, 244, 191, 0.2);
+            border: 4px solid #00F4BF;
+            border-radius: 8px;
+            width: 300px;
+            margin: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
             color: white; /* Cor do texto */
-            text-align: center; /* Alinhamento do texto */
-            text-shadow: 1px 1px 2px black; /* Sombreamento do texto para melhorar a legibilidade */
+            text-shadow: 1px 1px 2px black; /* Sombra do texto */
+            transition: transform 0.3s; /* Transição suave ao virar o cartão */
+        }
+
+        .cartao:hover {
+            transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+        }
+
+        /* Adicionando estilo para as perguntas e respostas */
+        .pergunta {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .resposta {
+            font-size: 1.2em;
+            opacity: 0; /* Inicialmente invisível */
+            transition: opacity 0.5s;
+        }
+
+        .cartao:hover .resposta {
+            opacity: 1; /* Torna a resposta visível ao passar o mouse */
         }
     </style>
 </head>
 <body>
-    <div class="conteudo">
-        <h1>O que aconteceria se você caísse em um buraco negro?</h1>
-        <p>No horizonte de eventos, sua percepção do espaço e do tempo mudaria completamente.</p>
+    <div class="cartao">
+        <div class="pergunta">O que aconteceria se você caísse em um buraco negro?</div>
+        <div class="resposta">No horizonte de eventos, sua percepção do espaço e do tempo mudaria completamente.</div>
     </div>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página com Imagem de Fundo</title>
-    <style>
-        /* Estilo para o corpo da página */
-        body {
-            margin: 0; /* Remove margens padrão */
-            height: 100vh; /* Altura total da tela */
-            background-image: url('https://images4.alphacoders.com/136/thumb-1920-1364151.png'); /* URL da imagem de fundo */
-            background-size: cover; /* Cobre toda a área */
-            background-position: left; /* Posiciona a imagem à esquerda */
-            background-repeat: no-repeat; /* Não repete a imagem */
-        }
-
-        /* Adicionando estilo para o conteúdo, se necessário */
-        .conteudo {
-            display: flex;
-            justify-content: center; /* Centraliza conteúdo horizontalmente */
-            align-items: center; /* Centraliza conteúdo verticalmente */
-            height: 100%; /* Altura total do corpo */
-            color: white; /* Cor do texto */
-            text-align: center; /* Alinhamento do texto */
-            text-shadow: 1px 1px 2px black; /* Sombreamento do texto para melhorar a legibilidade */
-        }
-    </style>
-</head>
-<body>
-    <div class="conteudo">
-        <h1>O que aconteceria se você caísse em um buraco negro?</h1>
-        <p>No horizonte de eventos, sua percepção do espaço e do tempo mudaria completamente.</p>
+    <div class="cartao">
+        <div class="pergunta">Qual é a capital da França?</div>
+        <div class="resposta">Paris.</div>
     </div>
+    <div class="cartao">
+        <div class="pergunta">O que é o aquecimento global?</div>
+        <div class="resposta">É o aumento da temperatura média da Terra devido ao efeito estufa.</div>
+    </div>
+    <div class="cartao">
+        <div class="pergunta">Quem escreveu "Dom Casmurro"?</div>
+        <div class="resposta">Machado de Assis.</div>
+    </div>
+    <div class="cartao">
+        <div class="pergunta">Qual é a fórmula da água?</div>
+        <div class="resposta">H2O.</div>
+    </div>
+    <!-- Adicione mais cartões conforme necessário -->
 </body>
 </html>
