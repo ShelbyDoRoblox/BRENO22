@@ -1,7 +1,9 @@
 const container = document.querySelector('.container');
 
 function viraCartao(cartao) {
-    cartao.classList.toggle('flip');
+    cartao.querySelector('.cartao__conteudo').classList.toggle('active');
+    cartao.querySelector('.cartao__conteudo__pergunta').style.transform = "rotateY(180deg)";
+    cartao.querySelector('.cartao__conteudo__resposta').style.transform = "rotateY(0deg)";
 }
 
 perguntas.forEach(pergunta => {
@@ -9,7 +11,7 @@ perguntas.forEach(pergunta => {
     cartao.classList.add('cartao');
 
     cartao.innerHTML = `
-        <div class="cartao__conteudo cartao__conteudo__pergunta" style="${pergunta.background ? `background: ${pergunta.background};` : ''}">
+        <div class="cartao__conteudo cartao__conteudo__pergunta" style="${pergunta.background ? `background: ${pergunta.background}; background-size: cover; transform: rotate(-90deg);` : ''}">
             <h3>${pergunta.pergunta}</h3>
         </div>
         <div class="cartao__conteudo cartao__conteudo__resposta">
