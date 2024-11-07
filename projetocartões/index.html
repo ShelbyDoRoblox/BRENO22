@@ -1,87 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página com Cartões de Perguntas</title>
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            background-image: url('https://images4.alphacoders.com/136/thumb-1920-1364151.png');
-            background-size: cover;
-            background-position: left;
-            background-repeat: no-repeat;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column; /* Alinhamento vertical dos cartões */
-        }
-
-        .container {
-            display: flex; /* Usando flexbox para alinhar os cartões horizontalmente */
-            flex-wrap: wrap; /* Permite que os cartões se movam para a próxima linha se necessário */
-            justify-content: center; /* Centraliza os cartões horizontalmente */
-            gap: 20px; /* Espaçamento entre os cartões */
-        }
-
-        .cartao {
-            background-color: rgba(0, 244, 191, 0.2);
-            border: 4px solid #00F4BF;
-            border-radius: 8px;
-            width: 300px;
-            padding: 20px;
-            box-sizing: border-box;
-            text-align: center;
-            color: white; /* Cor do texto */
-            text-shadow: 1px 1px 2px black; /* Sombra do texto */
-            transition: transform 0.3s; /* Transição suave ao virar o cartão */
-        }
-
-        .cartao:hover {
-            transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
-        }
-
-        /* Adicionando estilo para as perguntas e respostas */
-        .pergunta {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-
-        .resposta {
-            font-size: 1.2em;
-            opacity: 0; /* Inicialmente invisível */
-            transition: opacity 0.5s;
-        }
-
-        .cartao:hover .resposta {
-            opacity: 1; /* Torna a resposta visível ao passar o mouse */
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="cartao">
-            <div class="pergunta">O que aconteceria se você caísse em um buraco negro?</div>
-            <div class="resposta">No horizonte de eventos, sua percepção do espaço e do tempo mudaria completamente.</div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página com Cartões de Perguntas</title>
+        <style>
+            body {
+                margin: 0;
+                height: 100vh;
+                background-image: url('AQUI Ó');
+                background-size: cover;
+                background-position: left;
+                background-repeat: no-repeat;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;  
+            }
+    
+            .container {
+                display: flex; 
+                flex-wrap: wrap; 
+                justify-content: center; 
+                gap: 20px; 
+            }
+    
+            .cartao {
+                background-color: rgb(240, 109, 109);
+                border: 4px solid #f40000;
+                border-radius: 8px;
+                width: 300px;
+                padding: 20px;
+                box-sizing: border-box;
+                text-align: center;
+                color: white; 
+                text-shadow: 1px 1px 2px black; 
+                transition: transform 0.3s; 
+            }
+    
+            .cartao:hover {
+                transform: scale(1.05); 
+            }
+    
+            
+            .pergunta {
+                font-size: 1.5em;
+                margin-bottom: 10px;
+            }
+    
+            .resposta {
+                font-size: 1.2em;
+                opacity: 0;  
+                transition: opacity 0.5s;
+            }
+    
+            .cartao:hover .resposta {
+                opacity: 1; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="cartao">
+                <div class="pergunta">O que aconteceria se você caísse em um buraco negro?</div>
+                <div class="resposta">No horizonte de eventos, sua percepção do espaço e do tempo mudaria completamente.</div>
+            </div>
+            <div class="cartao">
+                <div class="pergunta">Qual é a capital da França?</div>
+                <div class="resposta">Paris.</div>
+            </div>
+            <div class="cartao">
+                <div class="pergunta">O que é o aquecimento global?</div>
+                <div class="resposta">É o aumento da temperatura média da Terra devido ao efeito estufa.</div>
+            </div>
+            <div class="cartao">
+                <div class="pergunta">Quais são os melhores jogadores de futebol"?</div>
+                <div class="resposta">Robinho, Goleiro bruno, Neymar e Daniel alves</div>
+            </div>
+            <div class="cartao">
+                <div class="pergunta">Qual é a fórmula da água?</div>
+                <div class="resposta">H2O.</div>
+            </div>
         </div>
-        <div class="cartao">
-            <div class="pergunta">Qual é a capital da França?</div>
-            <div class="resposta">Paris.</div>
-        </div>
-        <div class="cartao">
-            <div class="pergunta">O que é o aquecimento global?</div>
-            <div class="resposta">É o aumento da temperatura média da Terra devido ao efeito estufa.</div>
-        </div>
-        <div class="cartao">
-            <div class="pergunta">Quais são os melhores jogadores de futebol"?</div>
-            <div class="resposta">Robinho, Goleiro bruno, Neymar e Daniel alves</div>
-        </div>
-        <div class="cartao">
-            <div class="pergunta">Qual é a fórmula da água?</div>
-            <div class="resposta">H2O.</div>
-        </div>
-    </div>
-    <!-- Adicione mais cartões conforme necessário -->
-</body>
-</html>
+        
+    </body>
+    </html>
+    

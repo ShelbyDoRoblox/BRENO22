@@ -20,7 +20,7 @@ body {
 .cartao {
     perspective: 1000px;
     margin: 1rem;
-    overflow: hidden; /* Para esconder partes que ultrapassam os limites */
+    overflow: hidden; 
 }
 
 .cartao__conteudo {
